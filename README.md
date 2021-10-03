@@ -21,6 +21,9 @@ A social media app of users creating posts and others commenting on them.
 
 ## Resources:
 [How I passed in paramters in the headers](https://www.apollographql.com/docs/react/networking/authentication/)
+[How I styled the posts](https://react.semantic-ui.com/collections/grid/)
+[How the app presists the user's data after login](https://reactjs.org/docs/hooks-reference.html#usecontext)
+
 
 ## Start Editing?
 run ```npm intall``` on the server and client's codes to install dependencies
