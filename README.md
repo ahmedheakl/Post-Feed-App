@@ -18,6 +18,10 @@ A social media app of users creating posts and others commenting on them.
 * **Semantic-ui:** To style the webpages
 * **React-router:** To access different routes and render components at each route
 * **moment:** Get the time passed in a beautiful shape
+
+## Resources:
+[How I passed in paramters in the headers](https://www.apollographql.com/docs/react/networking/authentication/)
+
 ## Start Editing?
 run ```npm intall``` on the server and client's codes to install dependencies
 ## Deployment
