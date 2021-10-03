@@ -8,6 +8,8 @@ module.exports = gql`
     createdAt: String!
     comments: [Comment]!
     likes: [Like]!
+    likesCount: Int!
+    commentsCount: Int!
   }
 
   type Comment {
@@ -39,7 +41,7 @@ module.exports = gql`
   }
   type Query {
     getPosts: [Post]
-    getPost(postID: ID!): Post
+    getPost(postId: ID!): Post
   }
 
   type Mutation {

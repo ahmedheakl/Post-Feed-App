@@ -1,0 +1,40 @@
+:root {
+  --color-base-hue: 0;
+  --color-background-dark: hsl(var(--color-base-hue), 0%, 80%);
+  --color-background-light: hsl(var(--color-base-hue), 0%, 90%);
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    var(--color-background-dark),
+    var(--color-background-light)
+  );
+}
+
+.all_posts_container {
+  width: 1000px;
+  align-items: center !important;
+  margin: auto !important;
+  justify-content: center !important;
+}
+.post_container:hover {
+  box-shadow: 3px 3px whitesmoke;
+}
+
+.page_title {
+  display: block !important;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.buttons_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form_container {
+  width: 500px;
+  margin: auto;
+}
