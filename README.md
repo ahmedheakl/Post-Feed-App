@@ -9,4 +9,5 @@ A social media app of users creating posts and others commenting on them.
 
 ## Packages:
 ### Backend
-*
+* Node.js, Express, Apollo-server, Mongoose, jsonwebtoken, bcryptjs, graphql
+* @Apollo-client, Semantic-ui, React-router, moment, graphql
