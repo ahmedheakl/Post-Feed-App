@@ -18,4 +18,9 @@ A social media app of users creating posts and others commenting on them.
 * **Semantic-ui:** To style the webpages
 * **React-router:** To access different routes and render components at each route
 * **moment:** Get the time passed in a beautiful shape
-
+## Start Editing?
+run ```npm intall``` on the server and client's codes to install dependencies
+## Deployment
+* For the backend: I used heroku to deploy the database
+* For the frontend: I used Netlify to deploy the build from the client app
+Take a look at the site [Feed Post App](stoic-khorana-abd8fa.netlify.app)
