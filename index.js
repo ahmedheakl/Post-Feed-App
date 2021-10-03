@@ -17,6 +17,7 @@ mongoose
     console.log("MONGODB CONNECTED");
     return server.listen({ port: process.env.PORT || 5000 });
   })
-  .then((res) => console.log(`Server Running at ${res.url}`)).catch(err){
-    console.error(err)
-  };
+  .then((res) => console.log(`Server Running at ${res.url}`))
+  .catch((err) => {
+    console.error(err);
+  });
