@@ -8,5 +8,5 @@ A social media app of users creating posts and others commenting on them.
 * Connect the front-end to the database using Apollo Client
 
 ## Packages:
-###Backend
+### Backend
 *
