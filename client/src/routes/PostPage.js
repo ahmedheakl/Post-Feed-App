@@ -42,7 +42,7 @@ function PostPage(props) {
     <>
       {user ? (
         <>
-          <Label color="blue" style={{ marginLeft: 1035 }} tag>
+          <Label color="blue" style={{ marginLeft: "65vw" }} tag>
             Logged in
           </Label>
         </>
@@ -112,7 +112,7 @@ function PostPage(props) {
               {postData.comments.map((comment) => (
                 <Card fluid>
                   <Card.Content>
-                    {user && comment.username == user.username && (
+                    {user && comment.username === user.username && (
                       <DeleteButton
                         user={user}
                         commentId={comment.id}

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Form } from "semantic-ui-react";
 import FormHandler from "../utils/FormHandler";
 import { CREATE_POST } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import { FETCH_POSTS_QUERY } from "../utils/queries";
-import ErrorView from "./ErrorView";
 
 function CreatePost(props) {
   const { values, onChange, onSubmit } = FormHandler(createPostCallback, {

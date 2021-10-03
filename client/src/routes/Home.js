@@ -20,7 +20,7 @@ function Home() {
     <>
       {user ? (
         <>
-          <Label color="blue" style={{ marginLeft: 1035 }} tag>
+          <Label color="blue" style={{ marginLeft: "65vw" }} tag>
             Logged in
           </Label>
           <CreatePost />

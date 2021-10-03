@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "semantic-ui-react";
-import { CREATE_COMMENT, CREATE_POST } from "../utils/mutations";
+import { CREATE_COMMENT } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
-import { FETCH_POSTS_QUERY } from "../utils/queries";
-import ErrorView from "./ErrorView";
 
 function CreatePost({ postId }) {
   const [comment, setComment] = useState("");

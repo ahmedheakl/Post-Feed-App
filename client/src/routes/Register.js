@@ -16,7 +16,7 @@ function Register(props) {
   });
   const [errors, setErrors] = useState({});
 
-  const [registerUser, { loading, error }] = useMutation(REGISTER_USER, {
+  const [registerUser, { loading }] = useMutation(REGISTER_USER, {
     update(_, { data: { login: userData } }) {
       context.login(userData);
 
