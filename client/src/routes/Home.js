@@ -34,7 +34,7 @@ function Home(props) {
       )}
       <Grid>
         <Grid.Row>
-          <Grid.Column>
+          <Grid.Column className="auto-margin">
             <h2 className="page_title">Recently Added</h2>
           </Grid.Column>
         </Grid.Row>
@@ -45,7 +45,11 @@ function Home(props) {
             <Transition.Group>
               {posts &&
                 posts.map((post) => (
-                  <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
+                  <Grid.Column
+                    className="auto-margin"
+                    key={post.id}
+                    style={{ marginBottom: 20 }}
+                  >
                     <Post post={post} />
                   </Grid.Column>
                 ))}

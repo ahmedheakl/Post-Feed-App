@@ -43,6 +43,10 @@ body {
   margin: 5px auto !important;
 }
 
+.auto-margin {
+  margin: 0 auto 20px !important;
+}
+
 @media (max-width: 576px) {
   .column {
     width: 100% !important;

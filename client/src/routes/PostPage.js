@@ -57,7 +57,7 @@ function PostPage(props) {
       )}
       <Grid>
         <Grid.Row>
-          <Grid.Column width={2}>
+          <Grid.Column className="no-margin" width={2}>
             <Image
               src="https://react.semantic-ui.com/images/avatar/large/molly.png"
               size="medium"
