@@ -41,11 +41,9 @@ function PostPage(props) {
   postContent = postData ? (
     <>
       {user ? (
-        <>
-          <Label color="blue" style={{ marginLeft: "65vw" }} tag>
-            Logged in
-          </Label>
-        </>
+        <Label color="blue" style={{ marginBottom: "10px" }} tag>
+          Logged in
+        </Label>
       ) : (
         <Label
           color="red"
@@ -59,11 +57,10 @@ function PostPage(props) {
       )}
       <Grid>
         <Grid.Row>
-          <Grid.Column style={{ marginLeft: 10 }} width={2}>
+          <Grid.Column width={2}>
             <Image
               src="https://react.semantic-ui.com/images/avatar/large/molly.png"
               size="medium"
-              float="right"
             />
           </Grid.Column>
           <Grid.Column width={10}>
@@ -86,7 +83,7 @@ function PostPage(props) {
                   <Button as="div" labelPosition="right">
                     <Button color="blue">
                       <Icon name="comments" />
-                      Comment
+                      <span className="display-control">Comment</span>
                     </Button>
                     <Label as="a" basic="true" color="blue" pointing="left">
                       {postData.commentsCount}
@@ -110,7 +107,7 @@ function PostPage(props) {
             )}
             <Transition.Group>
               {postData.comments.map((comment) => (
-                <Card fluid>
+                <Card fluid key={comment.id}>
                   <Card.Content>
                     {user && comment.username === user.username && (
                       <DeleteButton

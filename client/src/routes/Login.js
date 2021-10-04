@@ -32,11 +32,11 @@ function Login(props) {
   }
 
   return (
-    <div className="form_container">
+    <>
       <Form
         onSubmit={onSubmit}
         noValidate={true}
-        className={loading ? "loading" : ""}
+        className={loading ? "loading form-control" : "form-control"}
       >
         <h1 className="page_title">Login</h1>
         <Form.Input
@@ -62,7 +62,7 @@ function Login(props) {
         </Button>
       </Form>
       <ErrorView errors={errors} />
-    </div>
+    </>
   );
 }
 

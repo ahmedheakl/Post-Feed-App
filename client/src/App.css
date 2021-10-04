@@ -10,14 +10,71 @@ body {
     var(--color-background-dark),
     var(--color-background-light)
   );
+  padding: 0;
+  margin: 0;
 }
 
-.all_posts_container {
-  width: 1000px;
-  align-items: center !important;
-  margin: auto !important;
-  justify-content: center !important;
+@media (max-width: 575px) {
+  .all_posts_container {
+    width: 500px;
+    align-items: center !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+  }
+  .header_menu {
+    margin: auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  .login {
+    width: 34rem !important;
+  }
+  .logout {
+    width: 34rem !important;
+  }
 }
+
+.ui.red.label {
+  margin-top: 10px !important;
+}
+
+.form-control {
+  max-width: 80% !important;
+  margin: 5px auto !important;
+}
+
+@media (max-width: 576px) {
+  .column {
+    width: 100% !important;
+  }
+
+  .ui.grid > .row > [class*="ten wide"].column {
+    width: 85% !important;
+    margin: 5px auto;
+  }
+
+  .ui.grid > .row > [class*="two wide"].column {
+    width: 50% !important;
+    margin: auto;
+  }
+  .form-control {
+    max-width: 100% !important;
+    margin: auto !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 675px) {
+  .display-control {
+    display: none !important;
+  }
+}
+
+@media (min-width: 577px) {
+  .column {
+    width: 50% !important;
+  }
+}
+
 .post_container:hover {
   box-shadow: 3px 3px whitesmoke;
 }

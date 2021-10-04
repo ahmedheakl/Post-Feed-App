@@ -29,33 +29,35 @@ export default function MenuExamplePointing() {
     );
   } else {
     return (
-      <Menu pointing size="massive" color="blue">
-        <Menu.Item
-          name="Home"
-          active={activeItem === "home"}
-          onClick={handleItemClick}
-          as={Link}
-          to="/"
-        />
-
-        <Menu.Menu position="right">
+      <div>
+        <Menu pointing size="massive" color="blue">
           <Menu.Item
-            name="Login"
-            active={activeItem === "login"}
+            name="Home"
+            active={activeItem === "home"}
             onClick={handleItemClick}
             as={Link}
-            to="/login"
+            to="/"
           />
 
-          <Menu.Item
-            name="Register"
-            active={activeItem === "register"}
-            onClick={handleItemClick}
-            as={Link}
-            to="/register"
-          />
-        </Menu.Menu>
-      </Menu>
+          <Menu.Menu position="right">
+            <Menu.Item
+              name="Login"
+              active={activeItem === "login"}
+              onClick={handleItemClick}
+              as={Link}
+              to="/login"
+            />
+
+            <Menu.Item
+              name="Register"
+              active={activeItem === "register"}
+              onClick={handleItemClick}
+              as={Link}
+              to="/register"
+            />
+          </Menu.Menu>
+        </Menu>
+      </div>
     );
   }
 }

@@ -8,7 +8,7 @@ import Post from "../components/PostContainer";
 import CreatePost from "../components/CreatePost";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home(props) {
   const { user } = useContext(AuthContext);
   let posts;
   const { loading, data } = useQuery(FETCH_POSTS_QUERY);
@@ -20,24 +20,20 @@ function Home() {
     <>
       {user ? (
         <>
-          <Label color="blue" style={{ marginLeft: "65vw" }} tag>
+          <Label color="blue" tag>
             Logged in
           </Label>
           <CreatePost />
         </>
       ) : (
-        <Label
-          color="red"
-          as={Link}
-          style={{ marginLeft: 979 }}
-          to="/login"
-          tag
-        >
-          Login To Create Post
-        </Label>
+        <>
+          <Label color="red" as={Link} to="/login" tag>
+            Login To Create Post
+          </Label>
+        </>
       )}
-      <Grid columns="two" className="all_posts_container">
-        <Grid.Row className="page_title">
+      <Grid>
+        <Grid.Row>
           <Grid.Column>
             <h2 className="page_title">Recently Added</h2>
           </Grid.Column>

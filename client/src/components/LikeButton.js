@@ -21,18 +21,18 @@ function LikeButton({ user, post: { id, likesCount, likes } }) {
     liked ? (
       <Button color="red" onClick={likePost}>
         <Icon name="heart" />
-        Like
+        <span className="display-control">Like</span>
       </Button>
     ) : (
       <Button basic="true" color="red" onClick={likePost}>
         <Icon name="heart" />
-        Like
+        <span className="display-control">Like</span>
       </Button>
     )
   ) : (
     <Button basic="true" as={Link} to="/login" color="red">
       <Icon name="heart" />
-      Like
+      <span className="display-control">Like</span>
     </Button>
   );
   return (

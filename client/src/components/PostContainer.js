@@ -29,7 +29,7 @@ function Post(props) {
           <Button as={Link} labelPosition="right" to={`/posts/${id}`}>
             <Button color="blue">
               <Icon name="comments" />
-              Comment
+              <span className="display-control">Comment</span>
             </Button>
             <Label as="a" basic="true" color="blue" pointing="left">
               {commentsCount}

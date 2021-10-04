@@ -32,8 +32,12 @@ function Register(props) {
     registerUser();
   }
   return (
-    <div className="form_container">
-      <Form onSubmit={onSubmit} noValidate className={loading ? "loading" : ""}>
+    <>
+      <Form
+        onSubmit={onSubmit}
+        noValidate
+        className={loading ? "loading form-control" : "form-control"}
+      >
         <h2 className="page_title">Register</h2>
         <Form.Input
           label="Username"
@@ -76,7 +80,7 @@ function Register(props) {
         </Button>
       </Form>
       <ErrorView errors={errors} />
-    </div>
+    </>
   );
 }
 
