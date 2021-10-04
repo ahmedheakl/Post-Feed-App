@@ -42,4 +42,4 @@ run `npm intall` on the server and client's codes to install dependencies
 - For the backend: I used heroku to deploy the database
 - For the frontend: I used Netlify to deploy the build from the client app
 
-Take a look at the site [Feed Post App](https://stoic-saha-2c4cdd.netlify.app/)
+Take a look at the site [Feed Post App](https://wizardly-heisenberg-6710a4.netlify.app)
