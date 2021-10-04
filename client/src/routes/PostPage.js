@@ -47,8 +47,8 @@ function PostPage(props) {
       ) : (
         <Label
           color="red"
+          style={{ marginBottom: "10px" }}
           as={Link}
-          style={{ marginLeft: 965 }}
           to="/login"
           tag
         >
